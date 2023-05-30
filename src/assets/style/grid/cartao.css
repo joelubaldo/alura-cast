@@ -1,0 +1,28 @@
+.secao-horizontal .cartao {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 1.25rem;
+}
+
+.secao-horizontal .cartao__imagem {
+    /*grid-column-start: 1; /* start onde inicia uma coluna */
+    /*grid-column-end:2; /* end onde finaliza uma coluna */
+    /*grid-row-start: 1; /* start onde inicia uma linha */
+    /*grid-row-end: 4; /* end onde finaliza uma linha, pode ser encontrado mais no grid line */
+    grid-area: 1/1/4/2;
+}
+.secao-horizontal .cartao__botao{
+    grid-column: 3/4; /* inicia e termina coluna botão */
+    grid-row: 1/4;  /* inicia e termina linha do botão */
+}
+
+.secao-horizontal .cartao__titulo{
+    align-self: end;
+}
+
+.secao-vertical .cartao {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+
+}
